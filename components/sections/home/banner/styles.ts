@@ -2,19 +2,12 @@ import styled from 'styled-components';
 
 export const Banner = styled.section`
   padding-top: 200px;
-  .bg {
-    /* background-image: url('/images/home-banner.jpg'); */
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
-  }
-  .container {
-    h1,
-    h2 {
-      color: white;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & + * {
+      margin-top: 50px;
     }
   }
 

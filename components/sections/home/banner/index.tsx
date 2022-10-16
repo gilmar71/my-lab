@@ -1,63 +1,25 @@
 /* Components */
-import { Container } from 'components/data/container';
-import { Form, InputComponent } from 'components/data/inputs/core';
-import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
-import { appContext } from 'src/contexts/MainContext/MainContext';
-
 /* Styles */
+import { Button } from '../../../data/button';
+import { Container } from '../../../data/container';
+import Item from '../../../data/item';
 import * as S from './styles';
+import { MyContext } from '../../../../src/contexts/mainContext';
 
 export function Banner() {
-  const [input, setInput] = useState({
-    name: '',
-    surname: '',
-  });
-
-  const [user, setUser] = useState({
-    name: '',
-    surname: '',
-  });
-
-  useEffect(() => {
-    const userStorage = localStorage.getItem('user');
-    if (userStorage) {
-      setUser(JSON.parse(userStorage));
-    } else {
-      setUser({
-        name: '',
-        surname: '',
-      });
-    }
-  });
-  const handleLogin = () => {
-    localStorage.setItem('user', JSON.stringify(input));
-    setUser(input);
-  };
-  const handleLogout = () => {
-    localStorage.removeItem('user');
-    setUser({
-      name: '',
-      surname: '',
-    });
-  };
+  const { state, createNewItem } = MyContext();
   return (
     <S.Banner>
       <Container>
-        <h1>Login</h1>
-
-        <input
-          type="text"
-          onChange={(e) =>
-            setInput({ name: e.target.value, surname: e.target.value })
-          }
-        />
-        <input type="text" />
-        <button onClick={handleLogin} type="submit">
-          Login
-        </button>
-        <button onClick={handleLogout}>Logout</button>
-        <h2>{user.name}</h2>
+        <div className="top">
+          <h1>Grid-list</h1>
+          <Button onClick={createNewItem} text="Create new person" />
+        </div>
+        <div className="person-list">
+          {state.items.map((item, index) => (
+            <Item key={item.id} position={index} {...item} />
+          ))}
+        </div>
       </Container>
     </S.Banner>
   );

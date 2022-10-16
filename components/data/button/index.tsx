@@ -17,13 +17,13 @@ export function Button({ text, href, type, ...props }: ButtonProps) {
     <S.Button className="button">
       {href && !type ? (
         <Link href={href} passHref>
-          <a href="" className="txt-sz-8-medium uppercase" {...props}>
+          <a href="" className="txt-sz-9-medium uppercase" {...props}>
             {text}
           </a>
         </Link>
       ) : (
         <button
-          className="txt-sz-8-medium uppercase"
+          className="txt-sz-9-medium uppercase"
           type={type ? type : 'submit'}
           {...props}
         >
