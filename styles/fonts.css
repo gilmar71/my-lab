@@ -1,0 +1,370 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+strong,
+time,
+address,
+i,
+a,
+b,
+label,
+li,
+td {
+  text-rendering: optimizeLegibility !important;
+}
+
+/* body {
+  font-family: 'Montserrat' !important;
+} */
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+[class*='-bold'] {
+  font-weight: 700;
+}
+[class*='-semibold'] {
+  font-weight: 600;
+}
+[class*='-medium'] {
+  font-weight: 500;
+}
+[class*='-regular'] {
+  font-weight: 400;
+}
+[class*='-light'] {
+  font-weight: 300;
+}
+[class*='-italic'] {
+  font-style: italic !important;
+}
+
+/* Font-Size */
+
+/*txt-sz-size*/
+[class*='txt-sz-1'] {
+  font-size: 4rem; /*64px*/
+}
+[class*='txt-sz-2'] {
+  font-size: 3.5rem; /*56px*/
+}
+[class*='txt-sz-3'] {
+  font-size: 3rem; /*48px*/
+}
+[class*='txt-sz-4'] {
+  font-size: 2rem; /*32px*/
+}
+[class*='txt-sz-5'] {
+  font-size: 1.75rem; /*28px*/
+}
+[class*='txt-sz-6'] {
+  font-size: 1.5rem; /*24px*/
+}
+[class*='txt-sz-7'] {
+  font-size: 1.25rem; /*20px*/
+}
+[class*='txt-sz-8'] {
+  font-size: 1.125rem; /*18px*/
+}
+[class*='txt-sz-9'] {
+  font-size: 1rem; /*16px*/
+}
+[class*='txt-sz-10'] {
+  font-size: 0.875rem; /*14px*/
+}
+[class*='txt-sz-11'] {
+  font-size: 0.75rem; /*12px*/
+}
+[class*='txt-sz-12'] {
+  font-size: 2.5rem; /*40px*/
+}
+
+/*Responsives*/
+
+@media only screen and (max-width: 1600px) {
+  /*txt-sz-size*/
+  [class*='txt-sz-1'] {
+    font-size: 3.75rem;
+  }
+  [class*='txt-sz-2'] {
+    font-size: 3.3rem;
+  }
+  [class*='txt-sz-3'] {
+    font-size: 2.85rem;
+  }
+  [class*='txt-sz-4'] {
+    font-size: 1.9rem;
+  }
+  [class*='txt-sz-5'] {
+    font-size: 1.65rem;
+  }
+  [class*='txt-sz-6'] {
+    font-size: 1.46rem;
+  }
+  [class*='txt-sz-7'] {
+    font-size: 1.21rem;
+  }
+  [class*='txt-sz-8'] {
+    font-size: 1.123rem;
+  }
+  [class*='txt-sz-9'] {
+    font-size: 0.99rem;
+  }
+  [class*='txt-sz-10'] {
+    font-size: 0.874rem;
+  }
+  [class*='txt-sz-12'] {
+    font-size: 2.3rem;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  /*txt-sz-size*/
+  [class*='txt-sz-1'] {
+    font-size: 3.6rem;
+  }
+  [class*='txt-sz-2'] {
+    font-size: 3rem;
+  }
+  [class*='txt-sz-3'] {
+    font-size: 2.7rem;
+  }
+  [class*='txt-sz-4'] {
+    font-size: 1.8rem;
+  }
+  [class*='txt-sz-5'] {
+    font-size: 1.55rem;
+  }
+  [class*='txt-sz-6'] {
+    font-size: 1.42rem;
+  }
+  [class*='txt-sz-7'] {
+    font-size: 1.17rem;
+  }
+  [class*='txt-sz-8'] {
+    font-size: 1.121rem;
+  }
+  [class*='txt-sz-9'] {
+    font-size: 0.98rem;
+  }
+  [class*='txt-sz-10'] {
+    font-size: 0.873rem;
+  }
+  [class*='txt-sz-12'] {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  /*txt-sz-size*/
+  [class*='txt-sz-1'] {
+    font-size: 3.4rem;
+  }
+  [class*='txt-sz-2'] {
+    font-size: 2.8rem;
+  }
+  [class*='txt-sz-3'] {
+    font-size: 2.55rem;
+  }
+  [class*='txt-sz-4'] {
+    font-size: 1.7rem;
+  }
+  [class*='txt-sz-5'] {
+    font-size: 1.45rem;
+  }
+  [class*='txt-sz-6'] {
+    font-size: 1.38rem;
+  }
+  [class*='txt-sz-7'] {
+    font-size: 1.13rem;
+  }
+  [class*='txt-sz-8'] {
+    font-size: 1.119rem;
+  }
+  [class*='txt-sz-9'] {
+    font-size: 0.97rem;
+  }
+  [class*='txt-sz-10'] {
+    font-size: 0.872rem;
+  }
+  [class*='txt-sz-12'] {
+    font-size: 1.9rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  /*txt-sz-size*/
+  [class*='txt-sz-1'] {
+    font-size: 3.2rem;
+  }
+  [class*='txt-sz-2'] {
+    font-size: 2.6rem;
+  }
+  [class*='txt-sz-3'] {
+    font-size: 2.4rem;
+  }
+  [class*='txt-sz-4'] {
+    font-size: 1.6rem;
+  }
+  [class*='txt-sz-5'] {
+    font-size: 1.35rem;
+  }
+  [class*='txt-sz-6'] {
+    font-size: 1.34rem;
+  }
+  [class*='txt-sz-7'] {
+    font-size: 1.09rem;
+  }
+  [class*='txt-sz-8'] {
+    font-size: 1.117rem;
+  }
+  [class*='txt-sz-9'] {
+    font-size: 0.96rem;
+  }
+  [class*='txt-sz-10'] {
+    font-size: 0.871rem;
+  }
+  [class*='txt-sz-12'] {
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /*txt-sz-size*/
+  [class*='txt-sz-1'] {
+    font-size: 3rem;
+  }
+  [class*='txt-sz-2'] {
+    font-size: 2rem;
+  }
+  [class*='txt-sz-3'] {
+    font-size: 1.8rem;
+  }
+  [class*='txt-sz-4'] {
+    font-size: 1.5rem;
+  }
+  [class*='txt-sz-5'] {
+    font-size: 1.25rem;
+  }
+  [class*='txt-sz-6'] {
+    font-size: 1.3rem;
+  }
+  [class*='txt-sz-7'] {
+    font-size: 1.05rem;
+  }
+  [class*='txt-sz-8'] {
+    font-size: 1.115rem;
+  }
+  [class*='txt-sz-9'] {
+    font-size: 0.95rem;
+  }
+  [class*='txt-sz-10'] {
+    font-size: 0.87rem;
+  }
+  [class*='txt-sz-12'] {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  [class*='txt-sz-1'] {
+    font-size: 2.5rem;
+  }
+  [class*='txt-sz-10'] {
+    font-size: 0.87rem;
+  }
+  [class*='txt-sz-12'] {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /*txt-sz-size*/
+  [class*='txt-sz-1'] {
+    font-size: 2.3rem;
+  }
+  [class*='txt-sz-2'] {
+    font-size: 1.8rem;
+  }
+  [class*='txt-sz-3'] {
+    font-size: 1.53rem;
+  }
+  [class*='txt-sz-4'] {
+    font-size: 1.4rem;
+  }
+  [class*='txt-sz-5'] {
+    font-size: 1.15rem;
+  }
+  [class*='txt-sz-6'] {
+    font-size: 1.26rem;
+  }
+  [class*='txt-sz-7'] {
+    font-size: 1.01rem;
+  }
+  [class*='txt-sz-8'] {
+    font-size: 1.113rem;
+  }
+  [class*='txt-sz-9'] {
+    font-size: 0.94rem;
+  }
+  [class*='txt-sz-10'] {
+    font-size: 0.869rem;
+  }
+  [class*='txt-sz-12'] {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  [class*='txt-sz-1'] {
+    font-size: 2.2rem;
+  }
+  [class*='txt-sz-2'] {
+    font-size: 1.7rem;
+  }
+  [class*='txt-sz-3'] {
+    font-size: 1.51rem;
+  }
+  [class*='txt-sz-4'] {
+    font-size: 1.35rem;
+  }
+  [class*='txt-sz-5'] {
+    font-size: 1.1rem;
+  }
+  [class*='txt-sz-6'] {
+    font-size: 1.23rem;
+  }
+  [class*='txt-sz-7'] {
+    font-size: 1rem;
+  }
+  [class*='txt-sz-8'] {
+    font-size: 0.95rem;
+  }
+  [class*='txt-sz-9'] {
+    font-size: 0.92rem;
+  }
+  [class*='txt-sz-10'] {
+    font-size: 0.86rem;
+  }
+  [class*='txt-sz-12'] {
+    font-size: 1.35rem;
+  }
+}
